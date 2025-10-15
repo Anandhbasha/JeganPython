@@ -31,10 +31,25 @@
 # sets = {22,88,44,88,44,55,60}
 # print(sets)
 # dictnory
-person = {
-    "name":"arun",
-    "age":20,
-    "city":"cbe"
-}
+# person = {
+#     "name":"arun",
+#     "age":20,
+#     "city":"cbe"
+# }
 
-print(person["name"], "\n" ,person["age"],'\n',person["city"])
+# print(person["name"], "\n" ,person["age"],'\n',person["city"])
+
+
+# a=60
+# b=70
+# c=80
+
+# temp=a
+# a=b
+# b=c
+# c=temp
+# print(a,b,c)
+a,b,c=60,70,80
+b,c,a=a,b,c
+print(a,b,c)
+
