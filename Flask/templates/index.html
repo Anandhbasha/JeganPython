@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Manager</title>
+</head>
+<body>
+    <h2>Student Manager (Flask Mini Project)</h2>
+
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Enter Student Name" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h3>Student List</h3>
+    <ul>
+        {% for s in students %}
+            <li>
+                {{ s.name }}  
+                <a href="/delete/{{ s.id }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
